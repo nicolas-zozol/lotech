@@ -4,8 +4,11 @@ const name = 'Robusta Code Lotech',
   version = '1.0.0';
 
 const myObject = {
-  name,
-  version
+  name : "Object",
+  version,
+  fun : function () {
+    console.log('Do some stuff');
+  }
 };
 
 
