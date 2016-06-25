@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "Lotech markdown parser",
   "main": "dist/index.js",
-  "starter-kit":"https://github.com/vinniegarcia/es6-module-starter",
+  "starter-kit": "https://github.com/vinniegarcia/es6-module-starter",
   "noscripts": {
     "dev": "babel-node src/index.js",
     "lint": "eslint src/**/*.js",
@@ -17,8 +17,13 @@
     "test": "npm run istanbul && npm run coveralls"
   },
   "scripts": {
-    "cover" : "istanbul cover --dir coverage/istanbul dist/test/*.js --report lcovonly",
-    "coveralls": "cat ./coverage/istanbul/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage"
+    "test": "babel src --out-dir dist && nodeunit dist/test",
+    "cover": "istanbul cover --dir coverage/istanbul dist/test/*.js --report lcovonly",
+    "coveralls": "cat ./coverage/istanbul/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage",
+    "dev": "babel --watch src --out-dir dist",
+    "compile": "babel src --out-dir dist --sourceMaps true --sourceMapTarget jo.map",
+    "lint": "eslint src/**/*.js",
+    "concat": "browserify dist/index.js -o dist/lotech.js"
   },
   "repository": {
     "type": "git",
@@ -38,14 +43,17 @@
   "license": "MIT",
   "devDependencies": {
     "argg": "0.0.2",
-    "babel": "^5",
+    "babel-cli": "^6.10.1",
     "babel-eslint": "^4.1.0",
+    "babel-preset-es2015": "^6.9.0",
+    "browserify": "^13.0.1",
     "coveralls": "^2.11.4",
     "eslint": "^1.2.1",
     "istanbul": "^0.3.18",
+    "minify": "^2.0.9",
+    "nodeunit": "~0.9.0",
     "plato": "^1.5.0",
-    "tape": "^4.2.0",
-    "nodeunit": "~0.9.0"
+    "tape": "^4.2.0"
   },
   "dependencies": {}
 }

@@ -6,13 +6,13 @@ export default  {
     'expect (space) to be accepted':  (test)=>{
         test.expect(1);
 
-        test.equals("bob", "bob", "should be bobby");
+        test.equals('bob', 'bob', 'should be bobby');
         test.done();
     },
     'expect object to have stuff':  (test)=>{
         test.expect(1);
 
-        test.equals(myObject.name, "Object", "should be Object");
+        test.equals(myObject.name, 'Object', "should be Object");
         test.done();
     }
 
