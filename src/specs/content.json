@@ -1,0 +1,205 @@
+[
+  {
+    "type": "chapter",
+    "title": {
+      "level": 1,
+      "text": "Lotech"
+    },
+    "items": [
+      {
+        "type": "paragraph",
+        "formattedText": [
+          {
+            "text": "Lotech is "
+          },
+          {
+            "strong": "cool"
+          }
+        ]
+      },
+      {
+        "type": "bullets",
+        "bullets": [
+          {
+            "type": "bullet",
+            "text": "Because it is simple"
+          },
+          {
+            "type": "bullet",
+            "text": "Because it works"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "Lotech can be used in many ways. The best is to define business centric tools."
+      },
+      {
+        "type": "command",
+        "command": "image",
+        "path": "lotech.png",
+        "title": "Lotech is cool"
+      },
+      {
+        "type": "command",
+        "command": "do-the-job",
+        "arg0": null,
+        "content": "Content is inside this string",
+        "data": 34
+      },
+      {
+        "type": "paragraph",
+        "formattedText": [
+          {
+            "text": "this is a "
+          },
+          {
+            "type": "link",
+            "style": "direct",
+            "url": "http:www.lotech.build",
+            "text": "direct link"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "formattedText": [
+          {
+            "text": "this is a"
+          },
+          {
+            "type": "link",
+            "style": "direct",
+            "url": "http:www.lotech.build",
+            "text": "direct link"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "formattedText": [
+          {
+            "text": "this is another "
+          },
+          {
+            "type": "link",
+            "style": "declared",
+            "text": "link"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "formattedText": [
+          {
+            "text": "Go directly to "
+          },
+          {
+            "type": "link",
+            "style": "automatic",
+            "url": "http:www.lotech.build",
+            "text": "http://www.lotech.build/...."
+          },
+          {
+            "text": " - automatic"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "formattedText": [
+          {
+            "text": "this is a "
+          },
+          {
+            "type": "link",
+            "style": "reference",
+            "reference": "title-ref",
+            "text": "http://www.lotech.build/...."
+          },
+          {
+            "text": " to another part"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "chapter",
+    "title": {
+      "level": 1,
+      "text": "Who is using it",
+      "command": {
+        "type": "command",
+        "command": "reference",
+        "name": "who-is-using-it"
+      }
+    },
+    "items": [
+      {
+        "type": "command",
+        "command": "links",
+        "entries": [
+          {
+            "link-back": "http:www.lotech.build",
+            "mail": "http:www.mail.com"
+          }
+        ]
+      },
+      {
+        "type": "command",
+        "command": "block-command",
+        "text": "This is handled by the command"
+      },
+      {
+        "type": "command",
+        "command": "other-block-command",
+        "value": "this will STOP the previous block-command.",
+        "comment": "because it's a command, it has its own attrs"
+      },
+      {
+        "type": "chapter",
+        "title": {
+          "level": 2,
+          "text": "Commands",
+          "items": [
+            {
+              "type": "paragraph",
+              "text":  "There are 3 kinds of commands:"
+            },
+            {
+              "type": "bullets",
+              "bullets": [
+                {
+                  "type": "bullet",
+                  "text": "line-command: which are preferred",
+                  "level": 1
+                },
+                {
+                  "type": "bullet",
+                  "text": "!image, !warning, !tile, !include....",
+                  "level": 2
+                },
+                {
+                  "type": "bullet",
+                  "text": "detail-commmand: put on right, will add context",
+                  "level": 1
+                },
+                {
+                  "type": "bullet",
+                  "text": "!reference",
+                  "level": 2
+                },
+                {
+                  "type": "bullet",
+                  "text": "block-command: used for business specific stuff",
+                  "level": 1
+                }
+              ]
+            }
+          ]
+        }
+      }
+    ]
+  }
+]
