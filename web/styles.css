@@ -1,0 +1,21 @@
+div{
+    box-sizing: border-box;
+}
+
+/* https://stackoverflow.com/a/24689420/968988*/
+*[contenteditable="true"]{display: inline-block;}
+
+div[contenteditable].lotech{
+    width: 80%;
+    height: 300px;
+    border: 2px solid #4f4696;
+    border-radius: 20px;
+    padding: 40px;
+    margin: auto;
+    box-shadow: 5px 5px 16px 2px #4f4696;
+}
+
+[contenteditable]:focus {
+    outline: 0 solid transparent;
+}
+

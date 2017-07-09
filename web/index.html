@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>LoTech</title>
+    <link href="styles.css" type="text/css" rel="stylesheet">
+    <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="../node_modules/parser-combinator/dist/parser-combinator.min.js"></script>
+    <script src="../dist/lotech.js"></script>
+
+
+</head>
+<body>
+
+<h2>Data Text</h2>
+<div contenteditable="true" class="lotech">
+
+</div>
+<button>Compile</button>
+
+<h2>Json</h2>
+<div class="json">
+
+</div>
+
+<h3>Output</h3>
+
+<div class="output"></div>
+
+</body>
+
+<script>
+
+$(function(){
+
+    /* probably not needed with the css hack: https://stackoverflow.com/a/24689420/968988
+
+    $('div[contenteditable]').keydown(function(e) {
+        // trap the return key being pressed
+        if (e.keyCode === 13) {
+            // insert 2 br tags (if only one br tag is inserted the cursor won't go to the next line)
+            document.execCommand('insertHTML', false, '<br><br>');
+            // prevent the default behaviour of return key pressed
+            return false;
+        }
+    });*/
+
+    lotech.initLotech();
+
+})
+
+
+</script>
+
+</html>

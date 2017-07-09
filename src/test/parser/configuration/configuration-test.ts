@@ -1,0 +1,6 @@
+
+
+
+const result = {
+    "plugins":["training"]
+}
